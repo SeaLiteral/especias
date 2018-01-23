@@ -26,8 +26,11 @@ I don't speak Finnish, but someone wanted to write Finnish with an orthographic 
 So far, I've figured I can use three keys per vowel and use the other vowel keys for adding S, then find out what to do with the "impossible" vowel key combinations: diphtongs or vowel+consonants? Here's what I'm considering to do for now:
 
     #SPTK * KTPS+
-    #FRsA * AsRF+
+    #FR:A * AsRF+
        IU   UI
+The same layout as Finnish, except for one of the colon keys being replaced with an s to write plurals. The left hand colon key could indicate whether or not the "word" is stressed on the first syllable. It can then use simple rules that add an accent to one of the vowels when necessary. I'd still have to figure out which consonant clusters to allow, and what to do with IU and AIU.
+
+Also, K would be written as C or QU depending on the vowel, and there would be some combination (probably PTK) to write the letter C. And standalone q (q without u) should be writable somehow, but probably won't allow multiple vowels in the same stroke. But standalone q is very rare in Spanish, more so than in Danish.
 
 # Configuration
 This system is implemented as a Python dictionary for Plover. I'm using all of the keys on the Ireland stenotype, including the number bar, even though it currently doesn't write numbers. Also, you need the Python dictionaries plugin for the Python dictionary to work, and you probably want to have at least one editable dictionary on a higher priority so that you can override the orthographic rules.
