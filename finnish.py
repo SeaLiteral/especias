@@ -12,7 +12,7 @@ The layout is this:
 '''
  #
  #  Copyright (C) 2017 Lars Rune Præstmark
- # This file is part of the HjejleOrdbog Danish stenography dictionary collection.
+ # This file is part of the Especias steno dictionary collection.
  # This program is free software: you can redistribute it and/or modify
  # it under the terms of the GNU General Public License as published by
  # the Free Software Foundation, either version 3 of the License, or
