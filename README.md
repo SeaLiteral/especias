@@ -1,4 +1,4 @@
-# especias
+# Especias
 Orthographic/phonetic dictionaries for Plover
 
 This is a set of phonetic and orthographic dictionaries for Plover. I'm adding a Finnish one first, but I plan to add a Spanish one too. By phonetic I mean that you write how something is pronounced, and then the dictionary figures out how to spell that. That will probably make more sense in Spanish, as Finnish spelling is so phonetic, you can't really tell if the strokes represent spelling or pronunciation.
@@ -31,6 +31,8 @@ So far, I've figured I can use three keys per vowel and use the other vowel keys
 
 # Configuration
 This system is implemented as a Python dictionary for Plover. I'm using all of the keys on the Ireland stenotype, including the number bar, even though it currently doesn't write numbers. Also, you need the Python dictionaries plugin for the Python dictionary to work, and you probably want to have at least one editable dictionary on a higher priority so that you can override the orthographic rules.
+
+And you should set the top half of the S- key to -Z. You can do that from Plover's machine tab with its configuration window. On a qwerty keyboard, that's the Q position, unless you've made some other change, such as moving the whole thing a row up, but if you've changed the layout, you probably know which keys are which.
 
 ## Documentation
 Currently, you'll have to read the source code. The person who wanted to write in Finnish also wanted to program, so I figured out I could release the code first, then work on documentation later. That's what happens when stuff like this is made for programmers, documentation gets a lower priority. Since I don't speak Finnish, I figured I needed to be able to get feedback early in development, and if I change the rules in the code, I would have to edit the documentation anyway if it existed. Sorry for the inconvenience that this may suppose, especially to non-programmers.
