@@ -200,7 +200,7 @@ Changes layout and reorders letters.
         r=syllable1+syllable2
         if(changedOrder1 and ('D' in key[0])
            and (((len(consonants1+consonants2)>3)) or
-                (consonants1+consoants2=='sll'))
+                (consonants1+consoants2=='sll'))):
            r=syllable1+'i'+syllable2 # Might want to use another vowel
            # But the nice thing about i and e is you don't need to apply
            # vowel harmony. Of course, using different vowels depending on
