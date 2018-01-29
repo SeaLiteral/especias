@@ -1,5 +1,4 @@
-'''Self-building dictionary implementing Danish orthography.
-This is a workaround until a Danish system can be working on its own.
+'''Procedural dictionary implementing Finnish stenography.
 It requires the python dictionaries plugin to work.'''
 
  #
