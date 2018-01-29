@@ -22,6 +22,10 @@ It requires the python dictionaries plugin to work.'''
  # TODO: What's the point of allowing sv? Maybe between vowels it's okay,
  #  But before a space it would probably be better assigned to something else.
  #  Other similar rule changes may be sensible.
+ #  Also, I probably want to consider carrying vowel harmony accross strokes
+ #  that belong to the same word. But that may cause multi-stroke "entries"
+ #  from this procedural "dictionary" to override single-stroke word-part
+ #  "briefs" from the manually edited one.
 LONGEST_KEY = 1
 
 def remakeConsonants(c):
@@ -231,6 +235,6 @@ Changes layout and reorders letters.
         if('D' in key[0]):
             syllable2=vowels2+consonants2
         r=syllable1+syllable2
-        if('*' in key[0]):r=r+'{^}'
+        if('*' in key[0]):r=r+'{^}' # Remove space before next word
         return(r)
     raise KeyError
